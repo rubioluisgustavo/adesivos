@@ -70,7 +70,7 @@
             <div class="text-center"><strong>Quantidade de cada adesivo</strong></div>
             <div class="col-12">
                 <div class="input-group">
-                    <input type="number" placeholder="Quantidade por adesivo">
+                    <input type="number" id="qtd" placeholder="Quantidade por adesivo">
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
             <div class="col-12">
                 <strong>Observações:</strong>
                 <div class="input-group">
-                    <input type="text" placeholder="Alguma dúvida? Recado?">
+                    <input type="text" id="msg" placeholder="Alguma dúvida? Recado?">
                 </div>
             </div>
         </div>
@@ -94,7 +94,9 @@
     </script>
     <script>
         function enviodados() {
-            swal("Bom trabalho!", "Produto(s) adicionados ao carrinho!", "success");
+            var qtd = document.getElementById("qtd").value;
+            var msg = document.getElementById("msg").value;
+            swal("Bom trabalho!", "Quantidade de adesivos:"+ qtd +" Mensagem:" +msg, "success");
         }
 
     </script>
