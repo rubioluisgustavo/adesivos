@@ -26,6 +26,16 @@ body{
     
 }
 
+input[type=text]{
+    height: 100px;
+    width: 400px;
+}
+
+input[type=number]{
+    height: 30px;
+    width: 300px;
+}
+
 .conteudo{
     background-color: rgb(205, 151, 255);
     align-items: center;
